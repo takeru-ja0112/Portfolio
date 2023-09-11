@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Kiwi+Maru:wght@500&family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <title>BoardGame</title>
+</head>
+<body><header>
+    <div class="rogo">BOARD</div>
+    <nav class="navInfo">
+        <ul>
+            <li><a href="#">コンセプト</a></li>
+            <li><a href="#" id="other-game">他のゲーム</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="other-menu">
+    <ul>
+        <a href="#"><li>サイコロ</li></a>
+        <a href="#"><li>人生ゲーム</li></a>
+        <a href="#"><li>メイメイ</li></a>
+        <a href="#"><li>キャットアンドチョコレート</li></a>
+    </ul>
+</div>
+<h1>カードに表示されたお題を確認し<br>思いついた言葉をネコ語で話しましょう<br>もし伝わったら成功ボタンを押しましょう<br>難しい場合はチェンジボタンを押しましょう</h1>
+<div class="time">
+    <p>残り時間: <span id="timer">01:00</span></p>
+    <button id="start-btn">スタート</button>
+</div>
+<div id="start-btn"></div>
+    <div class="gameBox">
+        <div id="box"> <div id="edit-area">お題</div></div>
+        <div class="counterBox">
+            <p style="font-size: 1.5rem;">成功回数</p>
+            <div id="point" style="font-size:2rem;"></div>
+        </div>
+        <input type="button" value="次のカード" onclick="htmlRandom()" id="on">
+        <input type="button" value="成功" onclick="success(),htmlRandom()" id="success">
+    </div>
+<p style="font-size: 1rem;">参照：ニャーニャーゲーム</p>
+<div class="crearScreen" id="crear">
+    <div class="centerBox">
+        <h2>今回の得点は</h2>
+            <div class="totalBox">
+                <div id="totalPoint" style="font-size: 10rem;">15</div><p>点</p>
+            </div>
+            <input type="button" value="もう一度" onclick="reTry()" id="retry">
+    </div>
+</div>
+    <script src="random.js"></script>
+    <script src="select.js"></script>
+</body>
+</html>
