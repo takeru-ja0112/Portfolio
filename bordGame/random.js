@@ -26,7 +26,7 @@ document.getElementById("start-btn").addEventListener("click" , function(){
     document.getElementById("start-btn").classList.add("no-start")
     const button = document.querySelector("#start-btn.no-start");
     button.style.pointerEvents = "none";
-var countdown = 10; // 5分（300秒）のカウントダウン
+var countdown = 180; // 5分（300秒）のカウントダウン
 
 var timer = setInterval(function() {
   var minutes = Math.floor(countdown / 60);
